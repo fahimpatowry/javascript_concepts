@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
+</script>
+</html>
+
+<!-- .document.getElementById('title') // will return full element with node and content
+.document.getElementById('title').id // will return ids
+.document.getElementById('title').className // will return classs
+.document.getElementById('title').getAttribute('id') // will return value
+.document.getElementById('title').getAttribute('class') // will return value
+.document.getElementById('title').setAttribute('class', 'text-color') //it can add and overwrite//
+.document.getElementById('title').setAttribute('id', 'text-color') //it can add and overwrite//
+.const title = document.getElementById('title')
+ title.style.backgroundColor = "red" // we can add style like this
+ title.textContent // give the text of content. also show if any content hidden by style or any
+ title.innerText // give the text of content. will give those content show in web
+ title.innerHTMl // give the text of content. also show the HTMl tag if have
+.document.querySelector('h1') // it will give first h1 for this page
+.document.querySelector('#titel')
+.document.querySelector('.titel')
+.document.querySelector('input[type"passoward"]')
+.const list = document.querySelectorAll(li) // it give node list of li
+ list[0].style.color= 'green'
+ list.forEach((li)=>{
+  li.style.color = 'blue'
+ })
+.const lists = document.getElementByClassName("list-item") // it will give all li value those have this class //
+ Array.from(lists).forEach((li)=>{
+  li.style.color = 'blue'
+ })
+.HTMl collections and node list -->
